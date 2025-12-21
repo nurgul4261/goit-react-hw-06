@@ -8,6 +8,7 @@
 
 .label {
     display: flex;
+    font-size: 18px;
     flex-direction: column;
 }
 
@@ -34,5 +35,5 @@ button:hover {
 
 .error {
     color: red;
-    font-size: 20px;
+    font-size: 18px;
 }
