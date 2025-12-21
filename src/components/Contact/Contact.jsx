@@ -6,9 +6,15 @@ const Contact = ({ contact }) => {
   const dispatch = useDispatch();
 
   return (
-    <li>
-      {contact.name} {contact.number}
-      <button className={styles.button} onClick={() => dispatch(deleteContact(contact.id))}>Delete</button>
+    <li className={styles.contactItem}>
+      <span className={styles.contactText}>
+        {contact.name} {contact.number}
+      </span>
+      <button
+        onClick={() => dispatch(deleteContact(contact.id))}
+      >
+        Delete
+      </button>
     </li>
   );
 };

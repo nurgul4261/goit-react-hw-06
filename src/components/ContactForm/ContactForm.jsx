@@ -25,12 +25,12 @@ const ContactForm = () => {
       <Form className={styles.form}>
         <label className={styles.label}>
           Name
-          <Field name="name" type="text" />
+          <Field className={styles.textarea} name="name" type="text" />
           <ErrorMessage className={styles.error}name="name" component="div" />
         </label>
         <label className={styles.label}>
           Number
-          <Field name="number" type="tel" />
+          <Field className={styles.textarea}name="number" type="tel" />
           <ErrorMessage name="number" component="div" />
         </label>
         <button type="submit">Add Contact</button>

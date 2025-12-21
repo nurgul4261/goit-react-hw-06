@@ -9,7 +9,7 @@ const SearchBox = () => {
   return (
     <div className={styles.searchBox}>
       <label htmlFor="search">Find contacts by name</label>
-      <input
+      <input className={styles.searchInput}
         id="search"
         type="text"
         value={filter}
